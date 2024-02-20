@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Blocker",
+    "description": "Blocks ads on websites, allows whitelisting exceptions, and has an automatic page refresh feature.",
+    "version": "1.1.0",
+    "permissions": [
+        "declarativeNetRequest","tabs","storage","declarativeNetRequestFeedback","cookies","notifications"
+    ],
+    "host_permissions":["<all_urls>"],
+    "background": {
+        "service_worker": "scripts/background.js",
+        "type":"module"
+    },
+    "action": {
+        "default_title": "Blocker",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+        "16": "assets/images/logo.png",
+        "32": "assets/images/logo.png",
+        "64": "assets/images/logo.png"
+      }
+    },
+    "icons": {
+        "16": "assets/images/logo.png",
+        "32": "assets/images/logo.png",
+        "64": "assets/images/logo.png"
+      },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "default",
+                "enabled": true,
+                "path": "/rulesets/main/default.json"
+            }
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}

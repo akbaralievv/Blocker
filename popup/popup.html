@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <p class="domain"></p>
+      </header>
+      <section class="content">
+        <div class="blockAds">
+          <input class="switch" type="checkbox" id="check-5" checked="true" />
+          <label for="check-5" class="blockAds_title">Blocking on this page is enabled</label>
+        </div>
+        <div class="whitelist_img">
+          <img src="../assets/images/white.svg" alt="white-list" />
+          <p>This site is on the white list. <br />Blocking is disabled.</p>
+        </div>
+        <div class="pageUpdate">
+          <div class="checkbox-wrapper-28">
+            <section></section>
+            <input id="tmp-28" type="checkbox" class="promoted-input-checkbox" />
+            <label for="tmp-28">Allow automatic page refresh.</label>
+            <svg><use xlink:href="#checkmark-28" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <symbol id="checkmark-28" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  fill="none"
+                  d="M22.9 3.7l-15.2 16.6-6.6-7.1"
+                ></path>
+              </symbol>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer_text">Number of blocked advertising domains on this page.</p>
+        <span id="countActions">0</span>
+      </footer>
+      <div class="whitelist">
+        <textarea
+          class="whitelist_input"
+          id="whitelistDomains"
+          placeholder="Enter domains separated by commas (example.com, anotherdomain.com)"
+        ></textarea>
+        <div class="whitelist_btns">
+          <button id="clearWhitelist">Clear whitelist</button>
+          <button id="addToWhitelist">Update whitelist</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./popup.js" type="module"></script>
+</html>
