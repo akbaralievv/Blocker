@@ -1,1 +1,1 @@
-<h1 align="center"><img src="[https://github.com/blackcater/blackcater/raw/main/images/Hi.gif](https://github.com/akbaralievv/Blocker/blob/main/assets/images/Screenshot_1.png)https://github.com/akbaralievv/Blocker/blob/main/assets/images/Screenshot_1.png" height="32"/></h1>
+![](https://github.com/akbaralievv/Blocker/blob/main/assets/images/Screenshot_1.png)https://github.com/akbaralievv/Blocker/blob/main/assets/images/Screenshot_1.png) 
